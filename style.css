@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    background-color:  #f1f1f1;
+    font-size: 19px;
+  }
+  /* menu's style */
+  .flex-container {
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+  .flex-container >  li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+    font-size: 18px;
+  }
+  .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+    padding: 20px 10px;
+    font-size: 18px;
+  }
+   li a:hover {
+    background-color: #f1f1f1;
+    color: black;
+  } 
+  /* header's style */
+  header {
+   background: url('images/dehri.jpg') no-repeat top center;
+   background-size: cover;
+   overflow: hidden;
+   text-align: center;
+   margin-bottom: 80px;
+  }
+  header .profile-image {
+    margin-top: 150px;
+    width: 150px;
+    height: 150px;
+    border: 4px solid black;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    transition: all .5s;
+  }
+  header .profile-image:hover {
+    transform: scale(1.4) rotate(360deg);
+  }
+  .head {
+  background-color: rgb(151, 105, 19);
+  display: table;
+  padding: 10px;
+  border-radius: 5px;
+  margin: auto;
+  
+  }
+  .code {
+    background-color: rgb(173, 110, 110);
+    color: yellow;
+    margin: 25px auto 45px;
+  }
+  /* main's style */
+  .flex {
+    display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex > section {
+    background-color: #ddd;
+    padding: 10px 30px;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 20px;
+    border-bottom: 5px solid red;
+    line-height: 1.8;
+  }
+  .flex > section:hover {
+    box-shadow: 2px 2px 4px black;
+  }
+  
+  .web {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .web > li {
+    display: inline-block;
+    background-color: skyblue;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  li.goal {
+    background-color: orange;
+  }
+  
+  .footer2 {
+    width: 100%;
+    min-height: 30px;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 40px auto;
+  }
+  
+  .footer2 ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer2 .copyright {
+    top: -6px;
+    font-size: .75em;
+  }
+  .footer2 ul li {
+     display: inline-block;
+     
+  }
+  a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: 0.4;
+
+  }
+  a.github {
+    background-image: url(images/github.svg);
+  }
+   a.social:hover {
+     opacity: 1;
+   }
+    @media screen and (max-width: 1100px) {
+    .flex > .card {
+      background-color:rgb(121, 143, 24);
+      color: white;
+      padding: 20px 20px;
+    }
+  }  
+ 
+  /* Experience's style of menu */
+  .body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .upper {
+    background-color: black;
+    overflow: hidden;
+  }
+  .upper a {
+    float: left;
+    display: block;
+    padding: 20px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    text-align: center;
+  }
+  .upper > .exp {
+    float: right;
+  }
+  .upper a:hover {
+    background-color: white;
+    color: black;
+  }
+  /* heading of web */
+  .first {
+    font-size: 20px;
+    
+  }
+  .first > h1 {
+   text-shadow: 2px 2px 5px red;
+   text-decoration: underline;
+   margin: 30px auto;
+   text-align: center;
+   text-transform: uppercase;
+  }
+  .first > p{
+    text-shadow: 0 0 3px #FF0000, 0 0 4px #0000FF;
+    text-align: center;
+  }
+  .first > img {
+    width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .last > img {
+    display: block;
+    width: 330px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+  }
+  /* main's style */
+  .last > h2 {
+    background-color: rgb(211, 12, 12);
+    color: white;
+    padding: 10px 10px;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 120px auto 20px;
+  }
+  .logo > img {
+    float: left;
+    width: 17%;
+    margin-left: 50px;
+  }
+
+   .section1 {
+    float: right;
+    width: 70%;
+    background-color:rgb(196, 132, 15);
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+  } 
+  .section {
+    display: table;
+    content: "";
+    clear: both;
+  }
+   @media screen and (max-width: 1100px) {
+     .logo > img , .section1 {
+       float: none;
+       display: block;
+       width: auto;
+     }
+     .logo > img {
+       margin-left: auto;
+       margin-right: auto;
+      }
+      main  {
+      background-color:rgb(114, 93, 53)
+
+      }
+  } 
+
+  /* footer's style */
+  .footer {
+    text-align: center;
+    background-color: lightblue;
+    width: 400px;
+    margin:  20px auto;
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+  .footer a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+  }
+  
+  /* @media  screen and (max-width: 1200px) { 
+    section > img, .section1  {
+      float: none;
+      width: auto;
+     */
+   /* img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+   } */
+  
+  
+  /* Hobbies's style */
+  .body2 {
+    background-color: black;
+  }
+   .nav2 > ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   background-color: green;
+   overflow: hidden;
+  }
+  .nav2 li {
+    float: left;
+  }
+  .nav2 li a{
+    display: block;
+    padding: 20px 10px;
+    color: white;
+    width: 120px;
+    background-color:rgb(121, 143, 24);
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  .nav2 li a:hover {
+    box-shadow: 2px 2px 3px red;
+  }
+  
+  .div1 {
+    clear: left;
+    background-color: skyblue;
+    border-radius:  15px;
+    padding: 10px 10px;
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto;
+    text-shadow: 2px 2px 4px red;
+    font-size: 20px;
+    
+  }
+  .div1 ul{
+    list-style-type: none;
+  }
+  .div1 > img {
+    border-radius: 10px;
+    margin: 10px auto;
+    border: 2px solid black;
+  }
+  
+  
+  
